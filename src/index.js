@@ -16,7 +16,7 @@
 
 //main divider to hold top objects
 let mainDiv = document.createElement('div');
-mainDiv.setAttribute("style", "font-size: large; color: #121; display: flex; justify-content: center; flex-direction: column");
+mainDiv.setAttribute("style", "font-size: large; color: #121; display: flex; justify-content: center; flex-direction: column; align-items: center");
 mainDiv.className = 'topPictureBox';
 
 //top divider bar to allow selection of different elements, along with element icons
@@ -25,20 +25,20 @@ topSelectBar.className = 'topSelectBar';
 topSelectBar.setAttribute('style', "height: 225px; border: 2px solid #000; display: flex; justify-content: center; grid-gap: 10px")
 
 // class for images set in topImages
-class topImages {
+// class topImages {
 
-  constructor (element, file){
-  self.element = element;
-  self.file = file;
-  }
+//   constructor (element, file){
+//   self.element = element;
+//   self.file = file;
+//   }
 
-  set file(value) {
-    this._file = value
-    }
-  set element(value) {
-    this._element = value 
-  }
-}
+//   set file(value) {
+//     this._file = value
+//     }
+//   set element(value) {
+//     this._element = value 
+//   }
+// }
 
 // object holder for all images and related urls
 const images = [
@@ -65,6 +65,7 @@ mainDiv.append(topSelectBar)
 // top photo for header of website
 let imgTop = document.createElement('img');
 imgTop.setAttribute("src","./img/food-title-page.png")
+imgTop.style.width = "60%";
 mainDiv.appendChild(imgTop)
 document.body.appendChild(mainDiv)
 
