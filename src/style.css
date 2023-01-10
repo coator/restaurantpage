@@ -1,0 +1,21 @@
+.topPictureBox {
+  font-size: large; 
+  color: #120; 
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+  align-items: center
+}
+
+.topSelectBar {
+  height: 225px; 
+  border: 2px solid #000; 
+  display: flex; 
+  justify-content: center; 
+  gap: 10px
+}
+
+.topSelectBar > img {
+  max-width: 10%;
+  gap: 10px;
+}
