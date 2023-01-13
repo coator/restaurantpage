@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browser": {
+    "child_process": false
+  },
   "devDependencies": {
     "css-loader": "^6.7.3",
     "style-loader": "^3.3.1",

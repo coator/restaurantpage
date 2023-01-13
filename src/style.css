@@ -1,21 +1,47 @@
-.topPictureBox {
-  font-size: large; 
+@font-face {
+  font-family: 'HeaderFont';
+  src: url(./font/arbutus-slab/arbutusslab-regular.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.resNameBanner {
+  font-size: 60pt; 
   color: #120; 
   display: flex; 
   justify-content: center; 
   flex-direction: column; 
-  align-items: center
+  align-items: center;
+  padding-top: 15px;
+}
+
+.sepDiv { 
+  border-top: 2px solid #121212; 
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .topSelectBar {
-  height: 225px; 
-  border: 2px solid #000; 
+  height: 175px; 
+  /* border: 2px solid #000;  */
   display: flex; 
   justify-content: center; 
-  gap: 10px
+  gap: 20px
 }
 
 .topSelectBar > img {
-  max-width: 10%;
-  gap: 10px;
+  max-width: 20%;
+  border: 3px solid #fff;
+  border-radius: 15px;
+}
+
+.midImgFood {
+  border-radius: 2px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.midImgFood > * {
+  font-size: 10pt;
 }
