@@ -36,12 +36,50 @@
 }
 
 .midImgFood {
-  border-radius: 2px;
-  margin-top: 50px;
+  margin-top: -250px;
+  padding: 0px 50px;
+  padding-top: 150px;
+
   display: flex;
   justify-content: center;
+  background-image: url('/src/img/bg-101.jpg');
+  background-size:cover;
+  background-position: 100%;
+  border: 2px solid #fff;
+  border-radius: 10px;
 }
 
 .midImgFood > * {
-  font-size: 10pt;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #000;
 }
+
+.midImgFood > p {
+  padding: 20px;
+}
+
+.layOver {
+  padding-top: 50px;
+}
+
+.buttonHolder {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5%;
+  justify-content: space-evenly;
+}
+
+.buttonIcon {
+  border: 4px solid #994433;
+  opacity: .3;
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.buttonIcon:hover {
+  opacity: 1;
+}
+
+
